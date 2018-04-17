@@ -1,0 +1,38 @@
+{
+  "name": "la-recolte-produits",
+  "version": "0.0.1",
+  "description": "API des produits de la récolte",
+  "main": "server.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://tferland@bitbucket.org/foodealiste/producesapi.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.16.3",
+    "express-fileupload": "^0.2.0",
+    "gulp-clone": "^1.1.4",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.22.0",
+    "mongoose": "^4.13.12",
+    "morgan": "^1.7.0",
+    "odoo-xmlrpc": "^1.0.6",
+    "odoose": "^0.0.5",
+    "request": "^2.85.0",
+    "wagner-core": "^0.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.5.0"
+  },
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "test-api": "api.spec.js",
+    "test-models": "gulp test-models",
+    "watch": "gulp watch",
+    "start": "node server.js"
+  }
+}
